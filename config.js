@@ -2,9 +2,9 @@ module.exports = {
 	helpCmdPerPage: 10, //- Number of commands per page of help command
 	lyricsMaxResults: 5, //- Number of results for lyrics command (Do not touch this value if you don't know what you are doing)
 	adminId: ".flexboss", //- Replace UserId with the Discord ID of the admin of the bot
-	token: process.env.token || "0c3e94516b10c26b7c3c2b57ec9f7607c5c0c307c5a877b91a64fbbe1a39ec3e", //- Bot's Token
+	token: process.env.token || "MTE3MTEwNzAyODY3NzE3MzM0OA.GPz2cA.ljw4V94zptWbgAO8Pp4YixQTLTwJb0YRMSC9Z4", //- Bot's Token
 	clientId: process.env.clientId || "1171107028677173348", //- ID of the bot
-	clientSecret: process.env.clientSecret || "mec1H4mVowevthfDLuFnJaNK_eLkrxUo", //- Client Secret of the bot
+	clientSecret: process.env.clientSecret || "zUJKaYHZRWOAvZEMxfvbPU5W9oABgQhN", //- Client Secret of the bot
 	port: 4200, //- Port of the API and Dashboard
 	scopes: ["identify", "guilds", "applications.commands"], //- Discord OAuth2 Scopes
 	inviteScopes: ["bot", "applications.commands"], // Invite link scopes
@@ -26,8 +26,8 @@ module.exports = {
 	nodes: [
 		{
 			identifier: "Main Node", //- Used for indentifier in stats commands.
-			host: "192.168.1.13", //- The host name or IP of the lavalink server.
-			port: 80, // The port that lavalink is listening to. This must be a number!
+			host: "127.0.0.1", //- The host name or IP of the lavalink server.
+			port: 2333, // The port that lavalink is listening to. This must be a number!
 			password: "", //- The password of the lavalink server.
 			retryAmount: 200, //- The amount of times to retry connecting to the node if connection got dropped.
 			retryDelay: 40, //- Delay between reconnect attempts if connection is lost.

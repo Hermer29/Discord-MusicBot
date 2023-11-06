@@ -12,6 +12,10 @@ services:
       - lavalink
     volumes:
       - ./config.js:/usr/src/app/config.js:ro
+    ports:
+      - "4200:4200"
+    environment:
+      MY_SECRET_KEY: ${MY_SECRET_KEY}
 
   lavalink:
     image: fredboat/lavalink:439f122
